@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "e51d0973-a8d5-44e1-bcaa-ad4b88d7c4e8",
+		"name": "CartServiceRequests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all carts",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get cart by id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get cart total",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Add Mug",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ProductId\": \"f019002f-d22c-4cbe-abbb-68d3a278b111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3516/api/cartservice/f019002f-d22c-4cbe-abbb-68d3a278b83c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3516",
+					"path": [
+						"api",
+						"cartservice",
+						"f019002f-d22c-4cbe-abbb-68d3a278b83c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Vase",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ProductId\": \"f019002f-d22c-4cbe-abbb-68d3a278b111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3516/api/cartservice/f019002f-d22c-4cbe-abbb-68d3a278b83c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3516",
+					"path": [
+						"api",
+						"cartservice",
+						"f019002f-d22c-4cbe-abbb-68d3a278b83c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Napkins",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ProductId\": \"f019002f-d22c-4cbe-abbb-68d3a278b111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3516/api/cartservice/f019002f-d22c-4cbe-abbb-68d3a278b83c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3516",
+					"path": [
+						"api",
+						"cartservice",
+						"f019002f-d22c-4cbe-abbb-68d3a278b83c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove cart product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ProductId\": \"f019002f-d22c-4cbe-abbb-68d3a278b111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3516/api/cartservice/f019002f-d22c-4cbe-abbb-68d3a278b83c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3516",
+					"path": [
+						"api",
+						"cartservice",
+						"f019002f-d22c-4cbe-abbb-68d3a278b83c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
