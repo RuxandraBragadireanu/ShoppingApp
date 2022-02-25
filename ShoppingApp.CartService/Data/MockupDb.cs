@@ -33,6 +33,7 @@ namespace ShoppingApp.CartService.Data
             context.Discounts.AddRange(
                 new Discount() { ProductId = napkins.Id, Quantity = 3, Percentage = 0.33},
                 new Discount() { ProductId = mug.Id, Quantity = 2, Percentage = 0.25}
+                //new Discount() { ProductId = mug.Id, Quantity = 1, Percentage = 1}
                 );
 
             context.SaveChanges();

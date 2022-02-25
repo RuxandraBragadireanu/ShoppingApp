@@ -59,19 +59,17 @@ namespace ShoppingApp.CartService.Services
             {
                 //select discound based on existing items quantity
                 var existingItems = cart.CartProducts.Where(obj => obj.ProductId == item.ProductId && obj.DiscountId == Guid.Empty);
-                if (existingItems.Any())
-                {
-                    selectedDiscount = discountList.FirstOrDefault(obj => obj.Quantity == (existingItems.Count() + 1));
+                selectedDiscount = discountList.FirstOrDefault(obj => obj.Quantity == (existingItems.Count() + 1));
                    
-                    //if discount is applicable set it to the existing items
-                    if (selectedDiscount != null)
+                //if discount is applicable set it to the existing items
+                if (selectedDiscount != null)
+                {
+                    foreach (CartProduct existingItem in existingItems)
                     {
-                        foreach (CartProduct existingItem in existingItems)
-                        {
-                            existingItem.DiscountId = selectedDiscount.Id;
-                        }
-                    }                
+                        existingItem.DiscountId = selectedDiscount.Id;
+                    }
                 }                
+                              
             }
 
             //create new item
